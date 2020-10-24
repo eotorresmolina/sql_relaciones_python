@@ -10,8 +10,8 @@ Descripcion:
 Programa creado para mostrar ejemplos prácticos de los visto durante la clase
 '''
 
-__author__ = "Inove Coding School"
-__email__ = "alumnos@inove.com.ar"
+__author__ = "Emmanuel Oscar Torres Molina"
+__email__ = "emmaotm@gmail.com"
 __version__ = "1.1"
 
 import os
