@@ -15,7 +15,7 @@ Deberá generar una base de datos de libros basada en los archivo CSV libreria_a
 
 ## create_schema
 Deben crear una función "create_schema" la cual se encargará de crear la base de datos y la tabla correspondiente al esquema definido. Deben usar la sentencia CREATE para crear la tabla mencionada.\
-Se debe crear una tabla "libro" y una tabla "autor". La coulmna "author" de la tabla "libro" debe estar relacionada (clave ajena) con la tabla "autor".\
+Se debe crear una tabla "libro" y una tabla "autor". La columna "author" de la tabla "libro" debe estar relacionada (clave ajena) con la tabla "autor".\
 IMPORTANTE: Recuerden que es recomendable borrar la tabla (DROP) antes de crearla si es que existe para que no haya problemas al ejecutar la query.
 
 ## fill()
