@@ -22,6 +22,7 @@ import sqlite3
 
 def insert_tutors (tutors):
     conn = sqlite3.connect('secundaria.db')
+    conn.execute("""PRAGMA foreing_keys = 1""")
     c = conn.cursor()
 
     c.executemany("""
@@ -53,6 +54,7 @@ def insert_group (group):
 
 def imprimir_tabla_tutor ( ):
     conn = sqlite3.connect('secundaria.db')
+    conn.execute("""PRAGMA foreing_keys = 1""")
     c = conn.cursor()
 
     c.execute(""" 
@@ -178,6 +180,7 @@ def fetch():
     print('(id, name, age, grade, tutor_nombre)')
 
     conn = sqlite3.connect('secundaria.db')
+    conn.execute("""PRAGMA foreing_keys = 1""")
     c = conn.cursor()
 
     c.execute("""
@@ -203,6 +206,7 @@ def search_by_tutor(tutor):
     # id / name / age / tutor_nombre
 
     conn = sqlite3.connect('secundaria.db')
+    conn.execute("""PRAGMA foreing_keys = 1""")
     c = conn.cursor()
 
     c.execute("""
@@ -227,6 +231,7 @@ def modify(id, name):
     # con el nombre del tutor pasado como parámetro
 
     conn = sqlite3.connect('secundaria.db')
+    conn.execute("""PRAGMA foreing_keys = 1""")
     c = conn.cursor()
     rowcount = c.execute("""
                 UPDATE estudiante
@@ -246,6 +251,7 @@ def count_grade(grade):
     # Imprimir en pantalla el resultado
 
     conn = sqlite3.connect('secundaria.db')
+    conn.execute("""PRAGMA foreing_keys = 1""")
     c = conn.cursor( )
 
     c.execute("""
